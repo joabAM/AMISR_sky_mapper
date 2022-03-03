@@ -629,7 +629,7 @@ if __name__ == "__main__":
     parser.add_argument("--minDB",type=int, default='45', help="min DB power")
     parser.add_argument("--maxDB",type=int, default='60', help="max DB power")
     parser.add_argument("--fps",type=int, default='5', help="frames per second")
-    parser.add_argument("--dataType",type=str, default="power", help="data type read for processing")
+    parser.add_argument("--dataType",type=str, default="volts", help="data type read for processing")
     kwargs = parser.parse_args()
 
     pltAMISR = AMISR_sky_mapper(kwargs)
