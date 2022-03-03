@@ -632,7 +632,7 @@ if __name__ == "__main__":
     parser.add_argument("--dataType",type=str, default="power", help="data type read for processing")
     kwargs = parser.parse_args()
 
-    pltAMISR = AMISRcuts(kwargs)
+    pltAMISR = AMISR_sky_mapper(kwargs)
 
     while (not pltAMISR.flagNoMoreFiles):
         pltAMISR.run()
