@@ -476,7 +476,7 @@ class AMISR_sky_mapper():
 
 
         if self.dataType == "power":
-            beams = self.beamCode[self.profileIndex,:]  # total de apuntes
+            beams = self.beamCode   # total de apuntes
 
         elif self.dataType == "volts":
             beams = self.beamCodeByPulse[self.profileIndex,:] #total de apuntes x integraciones
